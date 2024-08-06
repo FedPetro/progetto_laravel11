@@ -1082,3 +1082,9 @@ a.buy-btn{
 .descHeight{
   height: 70px !important;
 }
+
+
+.alert{
+  background-color: var(--accent) !important;
+  color: var(--main);
+}

@@ -2,12 +2,7 @@
     {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
 
 
-    @if (session()->has('success'))
-        <div class="row justify-content-center mt-4">
-            <div class="alert text-center shadow rounded w-50 message"> {{ session('success') }}
-            </div>
-        </div>
-    @endif
+
 
 
     <form wire:submit="store" class="shadow rounded p-5 formArticolo">
@@ -108,7 +103,12 @@
 
     </form>
 
-
+    @if (session()->has('success'))
+        <div class="row justify-content-center mt-4">
+            <div class="alert text-center shadow rounded w-50 message"> {{ session('success') }}
+            </div>
+        </div>
+    @endif
 
 
 
